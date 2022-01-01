@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import "animate.css/animate.min.css";
+import ScrollAnimation from 'react-animate-on-scroll';
 
 
 const Container = styled.div`
@@ -46,7 +48,10 @@ const AboutBody = styled.p`
 export const about = () => {
     return (
         <Container id='about'>
-            <Heading>About</Heading>
+        <ScrollAnimation animateIn='bounceInRight'
+  animateOut='bounceOutLeft'> <Heading>About</Heading> </ScrollAnimation>
+            
+            <ScrollAnimation animateIn='fadeIn' animateOut='fadeOut'>
             <AboutText>
                 <AboutTitle>Who Are We?</AboutTitle>
                 <AboutBody>Ziferk Solutions is a top information technology and software
@@ -61,6 +66,7 @@ export const about = () => {
                 is to listen, research and understand the
                 requirements unique to each individual business.</AboutBody>
             </AboutText>
+            </ScrollAnimation>
         </Container>
     )
 }

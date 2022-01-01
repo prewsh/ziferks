@@ -71,6 +71,11 @@ const Foot = styled.div`
 
 
 color: rgba(255, 255, 255, 0.34);
+
+@media (max-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
 `
 
 const Copyright = styled.div`

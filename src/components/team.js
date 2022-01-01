@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components';
-import mem1 from "../images/mem1.png"
+import mem1 from "../images/mem1.png";
+import "animate.css/animate.min.css";
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const Container = styled.div `
     width: 100%;
@@ -63,7 +65,12 @@ const Images = styled.img`
 const team = () => {
     return (
         <Container>
+                <ScrollAnimation animateIn='bounceInRight'
+  animateOut='bounceOutLeft'>
             <Heading>Meet the Team</Heading>
+            </ScrollAnimation>
+
+            <ScrollAnimation animateIn='fadeIn' animateOut='fadeOut'>
             <Team>
                 <Member>
                     <Images src={mem1} />
@@ -77,6 +84,7 @@ const team = () => {
                     <Images src={mem1} />
                 </Member3>
             </Team>
+            </ScrollAnimation>
         </Container>
     )
 }

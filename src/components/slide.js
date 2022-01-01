@@ -17,6 +17,10 @@ import styled from 'styled-components';
     border: none;
     cursor: pointer;
     font-size: 25px;
+    a{
+        color: #fff;
+        text-decoration: none;
+    }
 
     @media (max-width: 768px) {
 
@@ -85,7 +89,7 @@ const Slide = (props) => {
                 <MainText>
                     {content}
                 </MainText>
-                <Button>Explore</Button>
+                <Button><a href='#about'>Explore</a></Button>
             </Text>
         </Container>
 

@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
+import "animate.css/animate.min.css";
+import ScrollAnimation from 'react-animate-on-scroll';
 
 
 import project1 from "../images/proj1.png"
@@ -43,7 +45,10 @@ const TextA = styled.a`
 export const projects = () => {
     return (
         <Container id='portfolio'>
-            <Heading>Our Projects</Heading>
+           <ScrollAnimation animateIn='bounceInLeft' animateOut='bounceOutRight'> <Heading>Our Projects</Heading> </ScrollAnimation>
+
+           <ScrollAnimation animateIn='fadeIn'
+        animateOut='fadeOut'>
             <OwlCarousel className="owl-main  owl-theme" items={1} loop autoplay>
             <div className='item'>
                 <Images src={project1} /> 
@@ -64,6 +69,7 @@ export const projects = () => {
                       <TextA>https://wmhas.org.ng/</TextA>  </Text>
             </div>
             </OwlCarousel>
+            </ScrollAnimation>
         </Container>
     )
 }

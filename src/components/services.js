@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import SerImage from '../images/services.png';
+import "animate.css/animate.min.css";
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const Container = styled.div `
     width: 100%;
@@ -79,9 +81,12 @@ const Images = styled.img `
 
 const services = () => {
     return (
-        <Container id="services">
+        <ScrollAnimation animateIn='fadeIn'
+        animateOut='fadeOut'>
+                    <Container id="services">
 
-        <Heading>Services</Heading>
+                    <ScrollAnimation animateIn='bounceInLeft'
+  animateOut='bounceOutRight'> <Heading>Services</Heading> </ScrollAnimation>
 
         <Carousel>
                 <Left>
@@ -96,6 +101,8 @@ const services = () => {
         </Carousel>
 
         </Container>
+</ScrollAnimation>
+       
     )
 }
 
