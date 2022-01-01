@@ -18,10 +18,14 @@ const Details = styled.div`
 
     font-family: Poppins;
     font-style: normal;
-    ${'' /* font-weight: 600; */}
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     line-height: 36px;
     color: rgba(255, 255, 255, 0.72);
+
+    @media (max-width: 768px) {
+        font-size: 1rem;
+        line-height: 30px;
+    }
 `
 
 const Details1 = styled.div`
@@ -32,6 +36,11 @@ const Details1 = styled.div`
     font-size: 1.5rem;
     line-height: 36px;
     color: rgba(255, 255, 255, 0.72);
+
+    @media (max-width: 768px) {
+        font-size: 1rem;
+        line-height: 30px;
+    }
 `
 
 const Phone = styled.div`
@@ -65,7 +74,7 @@ const Foot = styled.div`
     font-family: Poppins;
     font-style: normal;
     ${'' /* font-weight: 600; */}
-    font-size: 24px;
+    font-size: 1.2rem;
     line-height: 36px;
     /* identical to box height */
 
@@ -75,6 +84,8 @@ color: rgba(255, 255, 255, 0.34);
 @media (max-width: 768px) {
         display: flex;
         flex-wrap: wrap;
+        font-size: 0.75rem;
+        line-height: 30px;
     }
 `
 
