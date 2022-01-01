@@ -8,6 +8,8 @@ import ScrollAnimation from 'react-animate-on-scroll';
 
 
 import project1 from "../images/proj1.png"
+import project2 from "../images/proj2.png"
+import project3 from "../images/proj3.png"
 
 
 const Container = styled.div `
@@ -57,16 +59,17 @@ export const projects = () => {
                       <TextA>https://wmhas.org.ng/</TextA>  </Text>
             </div>
             <div className='item'>
-                <Images src={project1} /> 
-                <Text>Waste Management System Application
-                        A TETFUND PROJECT
-                      <TextA>https://wmhas.org.ng/</TextA>  </Text>
+                <Images src={project2} /> 
+                <Text>School Management system
+NNUOLA INTERNATIONAL SCHOOL
+
+                      <TextA>https://nnoula.sch.ng/portal/</TextA>  </Text>
             </div>
             <div className='item'>
-                <Images src={project1} /> 
-                <Text>Waste Management System Application
-                        A TETFUND PROJECT
-                      <TextA>https://wmhas.org.ng/</TextA>  </Text>
+                <Images src={project3} /> 
+                <Text>IHECHUKWU MADUBUIKE
+INSTITUTE OF TECHNOLOGY
+                      <TextA>https://imit.edu.ng</TextA>  </Text>
             </div>
             </OwlCarousel>
             </ScrollAnimation>

@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import Burger from './Burger';
 
+import Logo from '../../images/logo1.png'
+
 const Nav = styled.nav`
   margin-top: 10px;
   width: 100%;
@@ -30,6 +32,11 @@ const Nav = styled.nav`
 
     color: #024E95;
   }
+
+  img{
+    height: 50px;
+    width: 70px;
+  }
 `
 
 
@@ -38,7 +45,7 @@ const Navbar = () => {
   return (
     <Nav>
       <div className="logo">
-      Ziferks
+      <img src={Logo} alt="company logo"/>Ziferks
       </div>
       <Burger />
     </Nav>

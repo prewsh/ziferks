@@ -1,8 +1,15 @@
 import React from 'react'
 import styled from 'styled-components';
-import mem1 from "../images/mem1.png";
 import "animate.css/animate.min.css";
 import ScrollAnimation from 'react-animate-on-scroll';
+
+
+
+import mem1 from "../images/mem1.png";
+import mem2 from "../images/mem2.png";
+import mem3 from "../images/mem3.png";
+import mem4 from "../images/mem4.png";
+import mem5 from "../images/mem5.png";
 
 const Container = styled.div `
     width: 100%;
@@ -74,14 +81,14 @@ const team = () => {
             <Team>
                 <Member>
                     <Images src={mem1} />
-                    <Images src={mem1} />
+                    <Images src={mem2} />
                 </Member>
                 <Member2>
-                    <Images src={mem1} />
+                    <Images src={mem3} />
                 </Member2>
                 <Member3>
-                    <Images src={mem1} />
-                    <Images src={mem1} />
+                    <Images src={mem4} />
+                    <Images src={mem5} />
                 </Member3>
             </Team>
             </ScrollAnimation>
