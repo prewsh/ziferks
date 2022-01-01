@@ -7,7 +7,9 @@ const Container = styled.div `
     padding: 30px;
     text-align: center;
 
-
+    @media (max-width: 768px) {
+        padding: 2px;
+}
 
 `
 
@@ -26,12 +28,21 @@ const Carousel = styled.div `
 
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.34);
+
+    @media (max-width: 768px) {
+    width: 100%;
+
+}
 `
 
 const Left = styled.div `
     width: 50%;
     text-align: left;
     padding-top: 100px;
+
+    @media (max-width: 768px) {
+        padding-top: unset;
+}
 
 `
 
@@ -48,7 +59,7 @@ const Text = styled.p `
 
 `
 
-const Button = styled.div `
+const Button = styled.button `
     width: 106px;
     height: 40px;
     color: white;
@@ -57,6 +68,8 @@ const Button = styled.div `
     display: flex;
     align-items: center;
     justify-content: center;
+    border: none;
+    cursor: pointer;
 `
 
 const Images = styled.img `
@@ -66,7 +79,7 @@ const Images = styled.img `
 
 const services = () => {
     return (
-        <Container>
+        <Container id="services">
 
         <Heading>Services</Heading>
 

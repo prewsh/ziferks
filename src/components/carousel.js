@@ -13,12 +13,12 @@ const Slider = () => {
     const content1 = " #1 Top Software development company in Nigeria."
     return (
 
-        <div className="slider index-3">
+        <div id="index" className="slider index-3">
             <OwlCarousel className="owl-main  owl-theme" items={1} loop autoplay>
-                <Slide img={img1} title="Think Big Do Creative Grow Business " content={content1} loop/>
-                <Slide img={img2} title="Think Big Do Creative Grow Business " content={content1} loop/>
-                <Slide img={img3} title="Think Big Do Creative Grow Business " content={content1}/>
-                <Slide img={img4} title="Think Big Do Creative Grow Business " content={content1}/>
+                <Slide img={img1}  content={content1} loop/>
+                <Slide img={img2}  content={content1} loop/>
+                <Slide img={img3}  content={content1} loop/>
+                <Slide img={img4}  content={content1} loop/>
             </OwlCarousel>
         </div>
     );

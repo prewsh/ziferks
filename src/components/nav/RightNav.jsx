@@ -16,6 +16,10 @@ const Ul = styled.ul`
     line-height: 150%;
     color:  #1C3E88;
   }
+  a{
+    color:  #1C3E88;
+    text-decoration: none;
+  }
 
 
   @media (max-width: 768px) {
@@ -33,16 +37,20 @@ const Ul = styled.ul`
     li {
       color: #fff;
     }
+    a{
+    color:  #fff;
+    text-decoration: none;
+  }
   }
 `;
 
 const RightNav = ({ open }) => {
   return (
     <Ul open={open}>
-      <li>Home</li>
-      <li>About Us</li>
-      <li>Services</li>
-      <li>Portfolio</li>
+      <li><a href="#index">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href='#portfolio'>Portfolio</a></li>
       <li>Send a Request</li>
       <li>Contact Us</li>
     </Ul>

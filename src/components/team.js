@@ -21,6 +21,8 @@ const Team = styled.div`
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+
+    margin: 0px auto;
 `
 
 const Member = styled.div`
@@ -28,16 +30,28 @@ const Member = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap
+    flex-wrap: wrap;
+
+    @media (max-width: 768px) {
+        margin: 0px auto;
+    }
 `
 
 const Member2 = styled.div`
+
+@media (max-width: 768px) {
+        margin: 0px auto;
+    }
 
 `
 
 const Member3 = styled.div`
     display: flex;
     flex-direction: column;
+
+    @media (max-width: 768px) {
+        margin: 0px auto;
+    }
 `
 
 const Images = styled.img`

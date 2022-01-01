@@ -7,15 +7,24 @@ const Container = styled.div`
     width: 100%;
     padding: 40px;
     text-align: center;
+
+    @media (max-width: 768px) {
+        padding: 15px;
+}
 `
 
 const Heading = styled.h3`
     color: #38B6FF;
     text-decoration: underline;
+    font-weight: Bold;
 `
 
 const AboutText = styled.div`
     padding: 30px;
+
+    @media (max-width: 768px) {
+       padding: unset;
+}
 `;
 
 const AboutTitle = styled.h3`
@@ -36,10 +45,10 @@ const AboutBody = styled.p`
 
 export const about = () => {
     return (
-        <Container>
+        <Container id='about'>
             <Heading>About</Heading>
             <AboutText>
-                <AboutTitle>Who are we?</AboutTitle>
+                <AboutTitle>Who Are We?</AboutTitle>
                 <AboutBody>Ziferk Solutions is a top information technology and software
                 development company in Nigeria that provides information
                 communication technology (ICT) solutions, products, and

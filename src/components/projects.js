@@ -14,6 +14,10 @@ const Container = styled.div `
     text-align: center;
     background: rgba(28, 62, 136, 0.8);
 
+    @media (max-width: 768px) {
+        padding: 30px;
+}
+
 `
 
 const Heading = styled.h3 `
@@ -38,22 +42,22 @@ const TextA = styled.a`
 
 export const projects = () => {
     return (
-        <Container>
+        <Container id='portfolio'>
             <Heading>Our Projects</Heading>
             <OwlCarousel className="owl-main  owl-theme" items={1} loop autoplay>
-            <div class='item'>
+            <div className='item'>
                 <Images src={project1} /> 
                 <Text>Waste Management System Application
                         A TETFUND PROJECT
                       <TextA>https://wmhas.org.ng/</TextA>  </Text>
             </div>
-            <div class='item'>
+            <div className='item'>
                 <Images src={project1} /> 
                 <Text>Waste Management System Application
                         A TETFUND PROJECT
                       <TextA>https://wmhas.org.ng/</TextA>  </Text>
             </div>
-            <div class='item'>
+            <div className='item'>
                 <Images src={project1} /> 
                 <Text>Waste Management System Application
                         A TETFUND PROJECT
