@@ -8,8 +8,8 @@ import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 
 const Container = styled.div `
-    width: 100%;
-    ${'' /* margin: 0px auto; */}
+    width: 80%;
+    margin: 0px auto;
     padding: 50px;
     text-align: center;
 
@@ -99,7 +99,7 @@ const services = () => {
                     <ScrollAnimation animateIn='fadeIn'
   animateOut='fadeOut'> <Heading>Services</Heading> </ScrollAnimation>
 
-<OwlCarousel>
+<OwlCarousel className="owl-main  owl-theme" items={1} loop autoplay>
         <Carousel>
                 <Left>
                     <Title>Web and Mobile app development</Title>

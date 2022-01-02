@@ -6,7 +6,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 
 
 const Container = styled.div`
-    width: 100%;
+    width: 80%;
     padding: 50px;
     text-align: center;
     margin: 0px auto;
