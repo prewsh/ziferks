@@ -31,7 +31,7 @@ const Ul = styled.ul`
     right: 0;
     height: 100vh;
     width: 300px;
-    padding-top: 3.5rem;
+    padding-top: 66px;
     transition: transform 0.3s ease-in-out;
     z-index: 10;
     li {

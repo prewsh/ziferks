@@ -81,7 +81,10 @@ const Foot = styled.div`
     /* identical to box height */
 
 
-color: rgba(255, 255, 255, 0.34);
+    color: rgba(255, 255, 255, 0.34);
+
+    margin: 0px -149px;
+    padding: 0px 15%;
 
 @media (max-width: 768px) {
         display: flex;

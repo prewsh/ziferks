@@ -34,8 +34,8 @@ const Nav = styled.nav`
   }
 
   img{
-    height: 48px;
-    width: 200px;
+    height: 50px;
+    width: 230px;
   }
 `
 

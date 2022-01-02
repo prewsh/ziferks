@@ -1,13 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
-import SerImage from '../images/services.png';
 import "animate.css/animate.min.css";
 import ScrollAnimation from 'react-animate-on-scroll';
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 
-import arrow from "../images/arrow.png"
+// image imports 
+
+import arrow from "../images/arrow.png";
+import SerImage from '../images/services1.png';
+import SerImage2 from "../images/services2.png";
+import SerImage3 from "../images/services3.png";
+import SerImage4 from "../images/services4.png";
 
 const Container = styled.div `
     width: 100%;
@@ -145,6 +150,39 @@ const services = () => {
                 
                 <Right>
                     <Images src={SerImage} />
+                </Right>
+        </Carousel>
+        <Carousel>
+                <Left>
+                    <Title>Software development</Title>
+                    <Text>Ziferk Solution is an experienced software development firm providding offshore software development services...</Text>
+                    <Button> Explore <img src={arrow} alt="company logo"/> </Button>
+                </Left>
+                
+                <Right>
+                    <Images src={SerImage2} />
+                </Right>
+        </Carousel>
+        <Carousel>
+                <Left>
+                    <Title>Hardware and Network security</Title>
+                    <Text>Trust in Ziferk solution to provide the optimum level of protection for your business.</Text>
+                    <Button> Explore <img src={arrow} alt="company logo"/> </Button>
+                </Left>
+                
+                <Right>
+                    <Images src={SerImage3} />
+                </Right>
+        </Carousel>
+        <Carousel>
+                <Left>
+                    <Title>IT Consultancy</Title>
+                    <Text>We offer consultancy services that span the entire IT lifecycle, from business process re-engineering to software design....</Text>
+                    <Button> Explore <img src={arrow} alt="company logo"/> </Button>
+                </Left>
+                
+                <Right>
+                    <Images src={SerImage4} />
                 </Right>
         </Carousel>
 </OwlCarousel>
