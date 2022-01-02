@@ -7,7 +7,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 
 const Container = styled.div`
     width: 100%;
-    padding: 5px 80px;
+    padding: 50px 153px;
     text-align: center;
     margin: 0px auto;
 
@@ -17,13 +17,20 @@ const Container = styled.div`
 `
 
 const Heading = styled.h3`
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+
+
     color: #38B6FF;
-    text-decoration: underline;
+    ${'' /* text-decoration: underline; */}
     font-weight: Bold;
 `
 
 const AboutText = styled.div`
-    padding: 30px;
+    ${'' /* padding: 30px; */}
 
     @media (max-width: 768px) {
        padding: unset;
@@ -31,16 +38,25 @@ const AboutText = styled.div`
 `;
 
 const AboutTitle = styled.h3`
-
+    text-align: left;
+    Font-family: Poppins;
+    font-style: normal;
+    Font-size: 35px;
+    Line-height: 60px;
 `;
 
 const AboutBody = styled.p`
     Font-family: Poppins;
     font-style: normal;
-    Font-size: 1.45rem;
-    Line-height: 45px;
+    Font-size: 1.85rem;
+    Line-height: 60px;
     text-align: Left;
     Vertical-align: Top;
+
+    font-weight: normal;
+    ${'' /* font-size: 40px; */}
+
+    color: #000000;
 
 `;
 

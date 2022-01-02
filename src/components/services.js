@@ -7,10 +7,12 @@ import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 
+import arrow from "../images/arrow.png"
+
 const Container = styled.div `
     width: 100%;
     margin: 0px auto;
-    padding: 5px 80px;
+    padding: 50px 153px;
     text-align: center;
 
     @media (max-width: 768px) {
@@ -20,6 +22,14 @@ const Container = styled.div `
 `
 
 const Heading = styled.h3 `
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    /* identical to box height */
+
+
     color: #38B6FF;
     text-decoration: underline;
 `
@@ -46,8 +56,9 @@ const Carousel = styled.div `
 const Left = styled.div `
     width: 50%;
     text-align: left;
-    padding-top: 100px;
-    margin-top: 380px;
+    padding-top: 65px;
+    margin-top: 230px;
+    padding-left: 34px;
 
     @media (max-width: 768px) {
         padding-top: unset;
@@ -60,17 +71,30 @@ const Right = styled.div `
 `
 
 const Title = styled.h3 `
-    font-weight: bold;
-    font-size: 20px;
+    ${'' /* font-weight: bold; */}
+    ${'' /* font-size: 20px; */}
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+
+    color: #000000;
 `
 
 const Text = styled.p `
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 45px;
 
+    color: #000000;
 `
 
 const Button = styled.button `
-    width: 106px;
-    height: 40px;
+width: 156px;
+height: 50px;
     color: white;
     background: #38B6FF;
     text-align: center;
@@ -80,6 +104,18 @@ const Button = styled.button `
     border: none;
     cursor: pointer;
     margin: 0px auto;
+
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 36px;
+
+    img{
+        width: 38px !important;
+        height: 20px;
+        padding-left: 14px;
+    }
 `
 
 const Images = styled.img `
@@ -104,7 +140,7 @@ const services = () => {
                 <Left>
                     <Title>Web and Mobile app development</Title>
                     <Text>We build custom web and mobile app tailored to suite your business needs.</Text>
-                    <Button> Explore </Button>
+                    <Button> Explore <img src={arrow} alt="company logo"/> </Button>
                 </Left>
                 
                 <Right>

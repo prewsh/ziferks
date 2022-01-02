@@ -21,8 +21,16 @@ const Container = styled.div `
 `
 
 const Heading = styled.h3 `
-    color: #ffffff;
-    text-decoration: underline;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 60px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+    ${'' /* text-decoration: underline; */}
     padding-bottom: 10px;
 `
 
@@ -61,6 +69,7 @@ const Member3 = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 
     @media (max-width: 768px) {
         margin: 0px auto;
@@ -68,11 +77,12 @@ const Member3 = styled.div`
 `
 
 const Images = styled.img`
-    margin-bottom: 20px;
+    margin-bottom: 126px;
     border: 5px solid white;
     border-radius: 50%;
-    width: 244px;
-    height: 250px;
+    width: 226px;
+    height: 226px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 `
 
 const team = () => {

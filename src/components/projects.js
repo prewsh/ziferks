@@ -15,7 +15,7 @@ import project3 from "../images/proj3.png"
 const Container = styled.div `
     width: 100%;
     margin: 0px auto;
-    padding: 5px 80px;
+    padding: 50px 153px;
     text-align: center;
     background: rgba(28, 62, 136, 0.8);
 
@@ -26,9 +26,16 @@ const Container = styled.div `
 `
 
 const Heading = styled.h3 `
-    color: #ffffff;
-    text-decoration: underline;
-    padding-bottom: 5px;
+    font-family: Poppins;
+    font-style: normal;
+    ${'' /* font-weight: 600; */}
+    font-size: 40px;
+    line-height: 60px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+    ${'' /* text-decoration: underline; */}
 `
 
 const Images = styled.img`
@@ -36,7 +43,16 @@ const Images = styled.img`
     height: 100%;
 `
 const Text = styled.p`
+    margin: 0px auto;
+    width: 530px;
+    height: 115px;
+
     color: white;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
 `
 
 const TextA = styled.a`
