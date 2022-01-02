@@ -6,10 +6,10 @@ const Ul = styled.ul`
   display: flex;
   align-items: center;
   flex-flow: row nowrap;
+  padding-top: 40px;
   li {
     padding: 18px 10px;
     margin: 5px 20px;
-    ${'' /* font-family: "Montserrat"; */}
     font-style: normal;
     font-weight: bold;
     font-size: 17px;
