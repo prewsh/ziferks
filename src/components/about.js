@@ -7,11 +7,12 @@ import ScrollAnimation from 'react-animate-on-scroll';
 
 const Container = styled.div`
     width: 100%;
-    padding: 40px;
+    padding: 50px;
     text-align: center;
+    margin: 0px auto;
 
     @media (max-width: 768px) {
-        padding: 15px;
+        ${'' /* padding: 15px; */}
 }
 `
 
@@ -36,8 +37,8 @@ const AboutTitle = styled.h3`
 const AboutBody = styled.p`
     Font-family: Poppins;
     font-style: normal;
-    Font-size: 1.35rem;
-    Line-height: 40px;
+    Font-size: 1.45rem;
+    Line-height: 45px;
     text-align: Left;
     Vertical-align: Top;
 
@@ -48,8 +49,8 @@ const AboutBody = styled.p`
 export const about = () => {
     return (
         <Container id='about'>
-        <ScrollAnimation animateIn='bounceInRight'
-  animateOut='bounceOutLeft'> <Heading>About</Heading> </ScrollAnimation>
+        <ScrollAnimation animateIn='fadeIn'
+  animateOut='fadeOut'> <Heading>About</Heading> </ScrollAnimation>
             
             <ScrollAnimation animateIn='fadeIn' animateOut='fadeOut'>
             <AboutText>
@@ -58,7 +59,7 @@ export const about = () => {
                 development company in Nigeria that provides information
                 communication technology (ICT) solutions, products, and
                 services using ultra-modern technologies. <br/>
-                <br/> 
+                
                 We are committed to continuous advancement in
                 our intellect and expertise and thus accomplishing
                 our success through the pursuit of elevated

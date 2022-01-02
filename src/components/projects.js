@@ -14,6 +14,7 @@ import project3 from "../images/proj3.png"
 
 const Container = styled.div `
     width: 100%;
+    margin: 0px auto;
     padding: 100px;
     text-align: center;
     background: rgba(28, 62, 136, 0.8);
@@ -47,10 +48,9 @@ const TextA = styled.a`
 export const projects = () => {
     return (
         <Container id='portfolio'>
-           <ScrollAnimation animateIn='bounceInLeft' animateOut='bounceOutRight'> <Heading>Our Projects</Heading> </ScrollAnimation>
+           <ScrollAnimation animateIn='fadeIn' animateOut='fadeOut'> <Heading>Our Projects</Heading> </ScrollAnimation>
 
-           <ScrollAnimation animateIn='fadeIn'
-        animateOut='fadeOut'>
+           <ScrollAnimation animateIn='fadeIn' animateOut='fadeOut'>
             <OwlCarousel className="owl-main  owl-theme" items={1} loop autoplay>
             <div className='item'>
                 <Images src={project1} /> 
