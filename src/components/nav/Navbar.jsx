@@ -34,8 +34,8 @@ const Nav = styled.nav`
   }
 
   img{
-    height: 50px;
-    width: 70px;
+    height: 48px;
+    width: 200px;
   }
 `
 
@@ -45,7 +45,7 @@ const Navbar = () => {
   return (
     <Nav>
       <div className="logo">
-      <img src={Logo} alt="company logo"/>Ziferks
+      <img src={Logo} alt="company logo"/>
       </div>
       <Burger />
     </Nav>

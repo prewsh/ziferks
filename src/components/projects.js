@@ -13,9 +13,9 @@ import project3 from "../images/proj3.png"
 
 
 const Container = styled.div `
-    width: 80%;
+    width: 100%;
     margin: 0px auto;
-    padding: 50px;
+    padding: 5px 80px;
     text-align: center;
     background: rgba(28, 62, 136, 0.8);
 

@@ -2,9 +2,9 @@ import React from 'react'
 import styled from 'styled-components';
 
 const Container = styled.div `
-    width: 80%;
+    width: 100%;
     margin: 0px auto;
-    padding: 50px;
+    padding: 5px 80px;
     text-align: center;
     background: rgba(31, 31, 31, 0.71);
 
