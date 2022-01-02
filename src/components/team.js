@@ -27,6 +27,7 @@ const Heading = styled.h3 `
 `
 
 const Team = styled.div`
+width: 80%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -58,6 +59,8 @@ const Member2 = styled.div`
 const Member3 = styled.div`
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     @media (max-width: 768px) {
         margin: 0px auto;
@@ -68,13 +71,15 @@ const Images = styled.img`
     margin-bottom: 20px;
     border: 5px solid white;
     border-radius: 50%;
+    width: 244px;
+    height: 250px;
 `
 
 const team = () => {
     return (
         <Container>
-                <ScrollAnimation animateIn='bounceInRight'
-  animateOut='bounceOutLeft'>
+                <ScrollAnimation animateIn='fadeIn'
+  animateOut='fadeOut'>
             <Heading>Meet the Team</Heading>
             </ScrollAnimation>
 

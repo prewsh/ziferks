@@ -59,7 +59,8 @@ const Text = styled.div`
     height: 100%; 
     font-size: 2.5rem;
     width: 100%;
-    margin-top: 450px;
+    margin-top: 630px;
+    
     padding: 1px;
 
     @media (max-width: 768px) {

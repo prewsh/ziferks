@@ -9,7 +9,7 @@ import Footer from "./components/footer"
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Container = styled.div`
-width: 95%;
+width: 100vw;
 margin: 0px auto;
   height: 100vh;
   padding: 0.75%;

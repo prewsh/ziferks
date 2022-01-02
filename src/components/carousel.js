@@ -4,10 +4,10 @@ import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 
 import Slide from "../components/slide"
-import img1 from "../images/sld2.png"
+import img1 from "../images/sld1.png"
 import img2 from "../images/sld2.png"
-import img3 from "../images/sld2.png"
-import img4 from "../images/sld2.png"
+import img3 from "../images/sld3.png"
+import img4 from "../images/sld4.png"
 
 const Slider = () => {
     const content1 = " #1 Top Software development company in Nigeria."
