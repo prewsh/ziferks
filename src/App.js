@@ -12,7 +12,7 @@ const Container = styled.div`
 width: 100vw;
 margin: 0px auto;
   height: 100vh;
-  padding: 0.75%;
+  ${'' /* padding: 0.75%; */}
   ${'' /* width: 90%; */}
   ${'' /* overflow: hidden; */}
   position: relative;
