@@ -61,9 +61,8 @@ const Carousel = styled.div `
 const Left = styled.div `
     width: 50%;
     text-align: left;
-    padding-top: 65px;
+    padding: 65px 30px;
     margin-top: 230px;
-    padding-left: 34px;
 
     @media (max-width: 768px) {
         padding-top: unset;

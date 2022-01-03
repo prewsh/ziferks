@@ -5,10 +5,13 @@ import Services from "./components/services"
 import About from "./components/about"
 import Projects from "./components/projects"
 import Team from "./components/team"
+import SendRequest from "./components/sendrequest"
+// import Contact from "./components/contact"
 import Footer from "./components/footer"
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Container = styled.div`
+background: rgba(31,31,31,0.71);
 width: 100%;
 margin: 0px auto;
   height: 100vh;
@@ -29,6 +32,8 @@ const App = () => {
   <About/>
   <Projects/>
   <Team/>
+  <SendRequest/>
+  {/* <Contact/> */}
   <Footer/>
 </Container>
 
