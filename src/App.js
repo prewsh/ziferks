@@ -11,7 +11,7 @@ import Footer from "./components/footer"
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Container = styled.div`
-background: rgba(31,31,31,0.71);
+${'' /* background: rgba(31,31,31,0.71); */}
 width: 100%;
 margin: 0px auto;
   height: 100vh;
