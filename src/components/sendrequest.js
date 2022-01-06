@@ -32,7 +32,7 @@ const Heading = styled.h3 `
     ${'' /* text-decoration: underline; */}
 `
 
-const FormDiv = styled.div`
+export const FormDiv = styled.div`
         display: flex;
         flex-direction: column;
 
