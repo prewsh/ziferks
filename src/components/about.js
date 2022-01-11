@@ -58,7 +58,7 @@ const AboutBody = styled.p`
     font-style: normal;
     Font-size: 1.85rem;
     Line-height: 60px;
-    text-align: Left;
+    text-align: justify;
     Vertical-align: Top;
 
     font-weight: normal;
@@ -69,6 +69,7 @@ const AboutBody = styled.p`
     @media(max-width: 768px){
         Font-size: 14px;
         Line-height: 40px;
+        text-align: justify;
     }
 
 `;
