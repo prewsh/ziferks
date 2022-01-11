@@ -8,9 +8,11 @@ const Container = styled.div `
     text-align: center;
     background: rgba(31, 31, 31, 0.71);
 
+
+
 `
 const Details = styled.div`
-    padding: 50px 153px;
+    padding: 15px 50px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -35,12 +37,12 @@ const Details1 = styled.div`
     font-family: Poppins;
     font-style: normal;
     ${'' /* font-weight: 600; */}
-    font-size: 1.5rem;
+    font-size: 24px;
     line-height: 36px;
     color: rgba(255, 255, 255, 0.72);
 
     @media (max-width: 768px) {
-        font-size: 1rem;
+        font-size: 14px;
         line-height: 30px;
     }
 `
@@ -48,6 +50,9 @@ const Details1 = styled.div`
 const Phone = styled.div`
 padding: 5px;
 margin-bottom: 30px;
+
+@media (max-width: 768px) {
+    }
 
 `
 
@@ -94,6 +99,7 @@ const Foot = styled.div`
         flex-wrap: wrap;
         font-size: 0.75rem;
         line-height: 30px;
+        padding: 3px 50px;
     }
 `
 
@@ -123,6 +129,10 @@ const Heading = styled.h3`
     color: #38B6FF;
     ${'' /* text-decoration: underline; */}
     font-weight: Bold;
+
+    @media(max-width: 768px){
+        font-size: 20px;
+    }
 `
 
 const ContactUs = styled.div`
@@ -130,6 +140,12 @@ const ContactUs = styled.div`
     ${'' /* clip-path: circle(64.0% at 50% 32%); */}
     width: 100%;
     padding: 50px 153px;
+    
+
+    @media(max-width: 768px){
+        padding: 15px 50px;
+
+    }
 
 `
 
@@ -139,6 +155,11 @@ const ContactDetails = styled.div`
     align-items: center;
     justify-content: space-evenly;
     padding-bottom: 10px;
+
+    @media(max-width: 768px){
+        display: flex;
+        flex-direction: column;  
+    }
 
 
     .send{
@@ -158,12 +179,20 @@ const ContactDetails = styled.div`
 const ContactLeft = styled.div`
     width: 40%;
     text-align: left;
+
+    @media(max-width: 768px){
+        width: 100%;
+    }
     
 `
 
 const ContactRight = styled.div`
     width: 60%;
     margin-bottom: 10px;
+
+    @media(max-width: 768px){
+        width: 100%;
+    }
 `
 
 const FormDiv =styled.div`
@@ -181,6 +210,11 @@ input{
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.26);
     box-sizing: border-box;
+
+    @media (max-width: 768px) {
+        height: 26px;
+    }
+
     }
 
 label{
@@ -200,6 +234,11 @@ textarea{
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.26);
     box-sizing: border-box;
+
+    @media (max-width: 768px) {
+        ${'' /* width: 169px; */}
+        height: 49px;
+    }
 }
 
 .tel-email{

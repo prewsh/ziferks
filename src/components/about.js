@@ -12,7 +12,7 @@ const Container = styled.div`
     margin: 0px auto;
 
     @media (max-width: 768px) {
-        ${'' /* padding: 15px; */}
+        padding: 15px 50px;
 }
 `
 
@@ -27,6 +27,10 @@ const Heading = styled.h3`
     color: #38B6FF;
     ${'' /* text-decoration: underline; */}
     font-weight: Bold;
+
+    @media(max-width: 768px){
+        Font-size: 14px !important;
+    }
 `
 
 const AboutText = styled.div`
@@ -43,6 +47,10 @@ const AboutTitle = styled.h3`
     font-style: normal;
     Font-size: 35px;
     Line-height: 60px;
+
+    @media(max-width: 768px){
+        Font-size: 14px !important;
+    }
 `;
 
 const AboutBody = styled.p`
@@ -57,6 +65,11 @@ const AboutBody = styled.p`
     ${'' /* font-size: 40px; */}
 
     color: #000000;
+
+    @media(max-width: 768px){
+        Font-size: 14px;
+        Line-height: 40px;
+    }
 
 `;
 

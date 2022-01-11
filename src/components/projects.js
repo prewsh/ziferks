@@ -36,6 +36,11 @@ const Heading = styled.h3 `
 
     color: #FFFFFF;
     ${'' /* text-decoration: underline; */}
+
+    @media(max-width: 768px){
+        font-size: 14px;
+        line-height: 21px;
+    }
 `
 
 const Images = styled.img`
@@ -53,6 +58,13 @@ const Text = styled.p`
     font-weight: 600;
     font-size: 24px;
     line-height: 36px;
+
+    @media(max-width: 768px){
+        width: 100%;
+        height: 100%;
+        font-size: 12px;
+        line-height: 18px;
+    }
 `
 
 const TextA = styled.a`

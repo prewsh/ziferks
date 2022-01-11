@@ -21,7 +21,7 @@ const Container = styled.div `
     text-align: center;
 
     @media (max-width: 768px) {
-        ${'' /* padding: 2px; */}
+        padding: 15px 50px;
 }
 
 `
@@ -37,6 +37,10 @@ const Heading = styled.h3 `
 
     color: #38B6FF;
     text-decoration: underline;
+
+    @media (max-width: 768px) {
+        font-size: 30px;
+    }
 `
 
 const Carousel = styled.div `
@@ -51,9 +55,12 @@ const Carousel = styled.div `
     border: 1px solid rgba(0, 0, 0, 0.34);
 
     @media (max-width: 768px) {
-    width: 80%;
-    display: flex;
-    flex-wrap: wrap;
+    width: 100%;
+    ${'' /* display: flex;
+    flex-wrap: wrap; */}
+
+    ${'' /* width: 449px; */}
+    height: 214px;
 
 }
 `
@@ -65,7 +72,8 @@ const Left = styled.div `
     margin-top: 230px;
 
     @media (max-width: 768px) {
-        padding-top: unset;
+        padding: 10px 6px;
+         margin-top: 10px;
 }
 
 `
@@ -84,6 +92,20 @@ const Title = styled.h3 `
     line-height: 60px;
 
     color: #000000;
+
+    @media(max-width: 768px){
+
+    width: 100%;
+    height: 46px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 16px;
+
+    color: #000000;
+    }
 `
 
 const Text = styled.p `
@@ -94,11 +116,24 @@ const Text = styled.p `
     line-height: 45px;
 
     color: #000000;
+
+    @media(max-width: 768px){
+        width: 100%;
+        ${'' /* height: 58px; */}
+
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 10px;
+
+        color: #000000;
+    }
 `
 
 const Button = styled.button `
-width: 156px;
-height: 50px;
+    width: 156px;
+    height: 50px;
     color: white;
     background: #38B6FF;
     text-align: center;
@@ -109,22 +144,33 @@ height: 50px;
     cursor: pointer;
     margin: 0px auto;
 
-        font-family: Poppins;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 24px;
-        line-height: 36px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+
+    @media(max-width: 768px){
+        width: 70px;
+        height: 20px;
+        font-size: 10px;
+    }
 
     img{
         width: 38px !important;
         height: 20px;
         padding-left: 14px;
+
+        @media(max-width: 768px){
+            width: 7px;
+            height: 7px;
+        }
     }
 `
 
 const Images = styled.img `
     width: 100%;
-    height: 645px;
+    height: 100%;
 `
 
 

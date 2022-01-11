@@ -40,10 +40,19 @@ import arrow from "../images/arrow.png"
         width: 5px;
         height: 20px;
         padding-left: 5px;
+
+        @media (max-width: 768px){
+            width: 10px;
+            height: 10.15px;
+        }
     }
 
     @media (max-width: 768px) {
-
+        margin-bottom: 13px;
+        width: 88px;
+        height: 31.46px;
+        font-size: 14px;
+        line-height: 21px;
   }
 `
 const Container = styled.div `
@@ -81,13 +90,11 @@ const Text = styled.div`
     margin-top: 516px;
     padding: 1px;
 
-
-
     @media (max-width: 768px) {
     height: 100%;
     width: 100%;
-    margin-top: 250px;
-    padding: 1px;
+    margin-top: 130px;
+    padding: 12px;
 }
 `
 
@@ -105,6 +112,21 @@ const MainText = styled.h3`
     margin-bottom: 50px;
 
     color: #FFFFFF;
+
+    @media(max-width: 768px){
+${'' /* position: absolute; */}
+width: 259px;
+height: 89.3px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 600;
+font-size: 20px !important;
+line-height: 21px;
+
+color: #FFFFFF;
+margin-bottom: 30px;
+    }
 `
 
 
@@ -120,7 +142,7 @@ const Slide = (props) => {
                 <MainText>
                     {content}
                 </MainText>
-                <Button><a href='#about'>Explore <img src={arrow} alt="company logo"/> </a></Button>
+                <Button><a href='#about'>Explore <img src={arrow} alt="about arrow"/> </a></Button>
             </Text>
         </Container>
 

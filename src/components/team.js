@@ -18,6 +18,10 @@ const Container = styled.div `
     text-align: center;
     background: rgba(28, 62, 136, 0.8);
 
+    @media(max-width: 768px){
+        padding: unset;
+    }
+
 `
 
 const Heading = styled.h3 `
@@ -32,10 +36,15 @@ const Heading = styled.h3 `
     color: #FFFFFF;
     ${'' /* text-decoration: underline; */}
     padding-bottom: 10px;
+
+    @media(max-width: 768px){
+        font-size: 20px;
+        line-height: 21px;
+    }
 `
 
 const Team = styled.div`
-width: 80%;
+    width: 80%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -83,6 +92,12 @@ const Images = styled.img`
     width: 226px;
     height: 226px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    @media (max-width: 768px){
+        width: 170px;
+        height: 170px;
+        margin-bottom: 30px;
+    }
 `
 
 const team = () => {

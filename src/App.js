@@ -34,7 +34,6 @@ const App = () => {
   <Projects/>
   <Team/>
   <SendRequest/>
-  {/* <Contact/> */}
   <Footer/>
 </Container>
 

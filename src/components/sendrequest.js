@@ -11,11 +11,9 @@ const Container = styled.div`
     text-align: center;
     background: #C4C4C4;
 
-    ${'' /* form{
-        width: 100%;
-        height: 60px;
-        margin: 0px auto;
-    } */}
+    @media(max-width: 768px){
+        padding: 15px 50px;
+    }
 
 `
 
@@ -30,6 +28,10 @@ const Heading = styled.h3 `
 
     color: #FFFFFF;
     ${'' /* text-decoration: underline; */}
+
+    @media(max-width: 768px){
+        font-size: 20px;
+    }
 `
 
 export const FormDiv = styled.div`
@@ -51,6 +53,10 @@ export const FormDiv = styled.div`
 
 
             color: rgba(0, 0, 0, 0.53);
+
+            @media (max-width: 768px){
+                font-size: 14px;
+            }
         }
 
         input{
@@ -61,6 +67,12 @@ export const FormDiv = styled.div`
             box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
             border: none;
             font-size: 30px;
+
+            @media (max-width: 768px){
+                font-size: 14px;
+                height: 40px;
+                margin-bottom: 5px;
+            }
         }
 
         textarea{
@@ -70,6 +82,10 @@ export const FormDiv = styled.div`
             box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
             border: none;
             font-size: 30px;
+
+            @media (max-width: 768px){
+                font-size: 14px;
+            }
         }
 
         textarea::placeholder{
@@ -82,6 +98,10 @@ export const FormDiv = styled.div`
 
 
             color: rgba(0, 0, 0, 0.54);
+
+            @media (max-width: 768px){
+                font-size: 14px;
+            }
         }
 
         button{
@@ -98,6 +118,13 @@ export const FormDiv = styled.div`
             outline: none;
             border: none;
             margin-top: 45px;
+
+            @media(max-width: 768px){
+                width: 100%;
+                font-size: 14px;
+                width: 119px;
+                height: 44px;
+            }
         }
 `
 
