@@ -29,7 +29,7 @@ const Heading = styled.h3`
     font-weight: Bold;
 
     @media(max-width: 768px){
-        Font-size: 14px !important;
+        Font-size: 20px !important;
     }
 `
 

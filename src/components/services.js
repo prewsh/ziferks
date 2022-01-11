@@ -39,7 +39,7 @@ const Heading = styled.h3 `
     text-decoration: underline;
 
     @media (max-width: 768px) {
-        font-size: 30px;
+        font-size: 20px;
     }
 `
 
