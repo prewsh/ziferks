@@ -5,17 +5,17 @@ import ScrollAnimation from 'react-animate-on-scroll';
 
 const Container = styled.div`
     width: 100%;
-    height: 100%;
+    ${'' /* height: 100%; */}
     margin: 0px auto;
     padding: 50px 158px;
     text-align: center;
     background: #C4C4C4;
 
-    form{
-        width: 1157px;
+    ${'' /* form{
+        width: 100%;
         height: 60px;
         margin: 0px auto;
-    }
+    } */}
 
 `
 
@@ -35,7 +35,8 @@ const Heading = styled.h3 `
 export const FormDiv = styled.div`
         display: flex;
         flex-direction: column;
-
+        width: 100%;
+        height: 100%;
         justify-content: center;
         align-item: center;
 
@@ -53,7 +54,7 @@ export const FormDiv = styled.div`
         }
 
         input{
-            width: 1160px;
+            ${'' /* width: 1160px; */}
             height: 60px;
             margin-bottom: 32px;
             background: #FFFFFF;
@@ -63,7 +64,7 @@ export const FormDiv = styled.div`
         }
 
         textarea{
-            width: 1160px;
+            ${'' /* width: 1160px; */}
             height: 252px;
             background: #FFFFFF;
             box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
@@ -106,9 +107,10 @@ const sendrequest = () => {
             <ScrollAnimation animateIn='fadeIn' animateOut='fadeOut'> <Heading>Send A Request</Heading> </ScrollAnimation>
 
 
-    <form className="form">
+    
 
     <FormDiv className="name">
+    {/* <form className="form"> */}
 
        <label for="Name">Name</label>
        <input
@@ -147,8 +149,10 @@ const sendrequest = () => {
         />
 
         <button type="submit" className="send">Send Message</button>
+        
+        {/* </form> */}
     </FormDiv>
- </form>
+
         </Container>
     )
 }

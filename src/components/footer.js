@@ -47,15 +47,18 @@ const Details1 = styled.div`
 
 const Phone = styled.div`
 padding: 5px;
+margin-bottom: 30px;
 
 `
 
 const Email = styled.div`
     padding: 5px;
+    margin-bottom: 30px;
 `
 
 const Address = styled.div`
     padding: 5px;
+    margin-bottom: 30px;
 `
 
 const Details2 = styled.div`
@@ -153,26 +156,28 @@ const ContactDetails = styled.div`
 `
 
 const ContactLeft = styled.div`
-    width: 50%;
+    width: 40%;
     text-align: left;
+    
 `
 
 const ContactRight = styled.div`
-    width: 50%;
+    width: 60%;
+    margin-bottom: 10px;
 `
 
 const FormDiv =styled.div`
 margin: 0px auto;
-    width: 180px;
+    width: 100%;
     ${'' /* height: 49px; */}
     display: flex;
     flex-direction: column;
     text-align: left;
 
 input{
-    ${'' /* width: 169px; */}
-    ${'' /* height: 26px; */}
-
+    ${'' /* width: 596px; */}
+    height: 63px;
+    margin-bottom: 10px;
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.26);
     box-sizing: border-box;
@@ -191,6 +196,7 @@ label{
 }
 
 textarea{
+    height: 151px;
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.26);
     box-sizing: border-box;
@@ -203,11 +209,21 @@ textarea{
 }
 
 .tel-email > div > input{
-    width: 88px;
+    width: 100%;
 }
 
 .tel-email> div{
-    margin: ;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+button{
+    margin: 12px auto;
+}
+
+.phoneNo{
+    margin-left: 10px;
 }
 
 
@@ -236,7 +252,7 @@ const footer = () => {
                     </Email>
                 </ContactLeft>
                 <ContactRight>
-                <form className="form">
+                {/* <form className="form"> */}
 
                         <FormDiv className="name">
 
@@ -249,7 +265,7 @@ const footer = () => {
                         />
 
                         <div className='tel-email'>
-                            <div>
+                            <div className='tel-email-inner'>
                             <label for="Email">Email</label>
                             <input
                                     type="email"
@@ -259,7 +275,7 @@ const footer = () => {
                             />
                             </div>
 
-                            <div>
+                            <div className='tel-email-inner'>
                             <label for="phone">Tel</label>
                             <input
                                     type="number"
@@ -278,11 +294,11 @@ const footer = () => {
                             name="message"
                             />
 
-                            
+<button type="submit" className="send">Submit</button>
                         </FormDiv>
-                    </form>
+                    {/* </form> */}
                 </ContactRight>
-                <button type="submit" className="send">Send Message</button>
+                
                 </ContactDetails>
             </ContactUs>
 
