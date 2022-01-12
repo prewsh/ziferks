@@ -85,6 +85,7 @@ export const FormDiv = styled.div`
 
             @media (max-width: 768px){
                 font-size: 14px;
+                height: 47px;
             }
         }
 
