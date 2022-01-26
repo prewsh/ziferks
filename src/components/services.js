@@ -312,7 +312,36 @@ const Services = () => {
                 <Left>
                     <Title>Software development</Title>
                     <Text>Ziferk Solution is an experienced software development firm providding offshore software development services...</Text>
-                    <Button> Explore <img src={arrow} alt="company logo"/> </Button>
+
+
+
+                    <StyledPopup
+                        trigger={<Button> Explore <img src={arrow} alt=""/> </Button>}
+                        modal
+                        closeOnDocumentClick>
+                        <span> 
+
+                        {/* the carousel showing inside the popup */}
+                        <Carousel>
+                                <PopLeft >
+                                    <Title>Software development</Title>
+                                    <PopText>Get your business an outstanding software capable of meeting all your business needs.</PopText>
+
+                                    <p> <img src={good} alt=" "/> Desktop Applications</p>
+                                    <p> <img src={good} alt=" "/> Enterprise Applications</p>
+                                    <p> <img src={good} alt=" "/> Software Maintanance</p>
+                                    <p> <img src={good} alt=" "/> Software Testing</p>
+                                    <p> <img src={good} alt=" "/> Software Re-engineering.</p>
+
+                                </PopLeft>
+                                
+                                <PopRight>
+                                    <Images src={SerImage2} />
+                                </PopRight>
+                        </Carousel>
+                        
+                        </span>
+                    </StyledPopup>
                 </Left>
                 
                 <Right>
@@ -323,7 +352,42 @@ const Services = () => {
                 <Left>
                     <Title>Hardware and Network security</Title>
                     <Text>Trust in Ziferk solution to provide the optimum level of protection for your business.</Text>
-                    <Button> Explore <img src={arrow} alt="company logo"/> </Button>
+
+
+
+                    <StyledPopup
+                        trigger={<Button> Explore <img src={arrow} alt=""/> </Button>}
+                        modal
+                        closeOnDocumentClick>
+                        <span> 
+
+                        {/* the carousel showing inside the popup */}
+                        <Carousel>
+                                <PopLeft >
+                                    <Title>Hardware installation and network security</Title>
+                                    <PopText>we provide optimum solutions to all hardware and network problems...</PopText>
+
+                                    <p> <img src={good} alt=" "/> Hardware installation and network security</p>
+                                    <p> <img src={good} alt=" "/> Adding hardware to a network</p>
+                                    <p> <img src={good} alt=" "/> Buying additional hardware components</p>
+                                    <p> <img src={good} alt=" "/> Designing long-term procurement strategies.</p>
+                                    <p> <img src={good} alt=" "/> Replacing outdated hardware and equipment</p>
+
+                                    <p>  <img src={good} alt=" "/> Improving network performance</p>
+                                    <p> <img src={good} alt=" "/> Buying new computer systems</p>
+                                    <p> <img src={good} alt=" "/> Network troubleshooting</p>
+
+                                </PopLeft>
+                                
+                                <PopRight>
+                                    <Images src={SerImage2} />
+                                </PopRight>
+                        </Carousel>
+                        
+                        </span>
+                    </StyledPopup>
+
+
                 </Left>
                 
                 <Right>
@@ -334,7 +398,36 @@ const Services = () => {
                 <Left>
                     <Title>IT Consultancy</Title>
                     <Text>We offer consultancy services that span the entire IT lifecycle, from business process re-engineering to software design....</Text>
-                    <Button> Explore <img src={arrow} alt="company logo"/> </Button>
+
+
+                    <StyledPopup
+                        trigger={<Button> Explore <img src={arrow} alt=""/> </Button>}
+                        modal
+                        closeOnDocumentClick>
+                        <span> 
+
+                        {/* the carousel showing inside the popup */}
+                        <Carousel>
+                                <PopLeft >
+                                    <Title>I.T Consultancy</Title>
+                                    <PopText>Get expert advice</PopText>
+
+                                    <p> <img src={good} alt=" "/> Strategic IT consulting services to give you a winning advantage</p>
+                                    <p> <img src={good} alt=" "/> Information security services Cloud services</p>
+                                    <p> <img src={good} alt=" "/> Work flow and business process automation</p>
+                                    <p> <img src={good} alt=" "/> I.T Support </p>
+
+                                </PopLeft>
+                                
+                                <PopRight>
+                                    <Images src={SerImage2} />
+                                </PopRight>
+                        </Carousel>
+                        
+                        </span>
+                    </StyledPopup>
+
+
                 </Left>
                 
                 <Right>
