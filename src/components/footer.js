@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components';
-// import FormDiv from "./sendrequest";
+
+import fb from "../images/fb.png";
+import insta from "../images/insta.png";
 
 const Container = styled.div `
     width: 100%;
@@ -67,7 +69,10 @@ const Address = styled.div`
 `
 
 const Details2 = styled.div`
-
+    display: flex;
+    justify-content: right;
+    align-items: flex-start;
+    flex-direction: column;
 `
 
 const Details3 = styled.div`
@@ -354,6 +359,10 @@ const footer = () => {
                 </Details1>
                 <Details2>
                     Follow us on...
+                    <div>
+                        <img style={{width:'50px ', height: '50px '}} src={insta} alt=" "/>
+                        <img style={{width:' 100px', height: '50px'}} src={fb} alt=" "/>
+                    </div>
                 </Details2>
                 <Details3>
                     Send Us a request

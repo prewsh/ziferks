@@ -5,10 +5,12 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
+import Popup from 'reactjs-popup';
 
 // image imports 
 
 import arrow from "../images/arrow.png";
+import good from "../images/good.png";
 import SerImage from '../images/services1.png';
 import SerImage2 from "../images/services2.png";
 import SerImage3 from "../images/services3.png";
@@ -78,8 +80,47 @@ const Left = styled.div `
 
 `
 
+const PopLeft = styled.div`
+    width: 50%;
+    text-align: left;
+    padding: 65px 30px;
+    margin-top: 0px;
+
+    @media (max-width: 768px) {
+        padding: 10px 6px;
+         margin-top: 10px;
+
+         p{
+        font-size: 6px;
+        height: 2px;
+        margin-bottom: 15px;
+    }
+}
+
+
+
+    img{
+        width: 38px !important;
+        height: 20px;
+        padding-left: 14px;
+
+        @media (max-width: 768px) {
+            width: 8px !important;
+            height: 5px;
+        padding-left: 4px;
+        }
+    }
+
+`
+
+
 const Right = styled.div `
     width: 50%;
+`
+
+const PopRight = styled.div `
+    width: 50%;
+    height: 100%;
 `
 
 const Title = styled.h3 `
@@ -96,7 +137,7 @@ const Title = styled.h3 `
     @media(max-width: 768px){
 
     width: 100%;
-    height: 46px;
+    height: 36px;
 
     font-family: Poppins;
     font-style: normal;
@@ -117,6 +158,10 @@ const Text = styled.p `
 
     color: #000000;
 
+    p{
+        font-size: 5px;
+    }
+
     @media(max-width: 768px){
         width: 100%;
         ${'' /* height: 58px; */}
@@ -129,6 +174,17 @@ const Text = styled.p `
 
         color: #000000;
     }
+`
+
+const PopText = styled.p`
+
+@media(max-width: 768px){
+
+    font-size: 6px;
+    margin-bottom: 19px;
+}
+   
+
 `
 
 const Button = styled.button `
@@ -173,8 +229,28 @@ const Images = styled.img `
     height: 100%;
 `
 
+const StyledPopup = styled(Popup)`
+  // use your custom style for ".popup-overlay"
+  &-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    }
+    [data-popup='tooltip'].popup-overlay {
+    background: transparent;
+  }
 
-const services = () => {
+
+  // use your custom style for ".popup-content"
+  &-content {
+    margin: 0px auto;
+    background: rgb(255, 255, 255);
+    width: 80%;
+    padding: 0px;
+  }
+`;
+
+
+const Services = () => {
+
     return (
         <ScrollAnimation animateIn='fadeIn'
         animateOut='fadeOut'>
@@ -190,7 +266,42 @@ const services = () => {
                 <Left>
                     <Title>Web and Mobile app development</Title>
                     <Text>We build custom web and mobile app tailored to suite your business needs.</Text>
-                    <Button> Explore <img src={arrow} alt="company logo"/> </Button>
+
+
+
+                   
+                    <StyledPopup
+                        trigger={<Button> Explore <img src={arrow} alt=""/> </Button>}
+                        modal
+                        closeOnDocumentClick>
+                        <span> 
+
+                        {/* the carousel showing inside the popup */}
+                        <Carousel>
+                                <PopLeft >
+                                    <Title>Web and Mobile app development</Title>
+                                    <PopText>We build custom web and mobile app tailored to suite your business needs.</PopText>
+
+                                    <p> <img src={good} alt=" "/> Get a standard website for your business</p>
+                                    <p> <img src={good} alt=" "/> Mobile applications suitable for both IOS</p>
+                                    <p> <img src={good} alt=" "/> Android and windows.</p>
+                                    <p> <img src={good} alt=" "/> E-commerce website and apps.</p>
+                                    <p> <img src={good} alt=" "/> Educational website and apps.</p>
+
+                                    <p>  <img src={good} alt=" "/> Religious websites.</p>
+                                    <p> <img src={good} alt=" "/> other categories custom made just for you.</p>
+
+                                </PopLeft>
+                                
+                                <PopRight>
+                                    <Images src={SerImage2} />
+                                </PopRight>
+                        </Carousel>
+                        
+                        </span>
+                    </StyledPopup>
+
+
                 </Left>
                 
                 <Right>
@@ -239,4 +350,4 @@ const services = () => {
     )
 }
 
-export default services
+export default Services
