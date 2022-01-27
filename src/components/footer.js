@@ -278,7 +278,7 @@ const footer = () => {
     return (
         <Container>
             
-            <ContactUs>
+            <ContactUs id="contact">
             <Heading>Contact Us</Heading>
             <ContactDetails>
                 <ContactLeft>

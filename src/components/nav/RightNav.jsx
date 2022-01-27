@@ -51,8 +51,8 @@ const RightNav = ({ open }) => {
       <li><a href="#about">About Us</a></li>
       <li><a href="#services">Services</a></li>
       <li><a href='#portfolio'>Portfolio</a></li>
-      <li>Send a Request</li>
-      <li>Contact Us</li>
+      <li> <a href='#sendrequest'> Send a Request </a> </li>
+      <li> <a href='#contact'>  Contact Us </a> </li>
     </Ul>
   )
 }

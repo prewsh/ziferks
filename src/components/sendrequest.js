@@ -131,7 +131,7 @@ export const FormDiv = styled.div`
 
 const sendrequest = () => {
     return (
-        <Container>
+        <Container id='sendrequest'>
             <ScrollAnimation animateIn='fadeIn' animateOut='fadeOut'> <Heading>Send A Request</Heading> </ScrollAnimation>
 
 

@@ -294,7 +294,7 @@ const Services = () => {
                                 </PopLeft>
                                 
                                 <PopRight>
-                                    <Images src={SerImage2} />
+                                    <Images src={SerImage} />
                                 </PopRight>
                         </Carousel>
                         
@@ -380,7 +380,7 @@ const Services = () => {
                                 </PopLeft>
                                 
                                 <PopRight>
-                                    <Images src={SerImage2} />
+                                    <Images src={SerImage3} />
                                 </PopRight>
                         </Carousel>
                         
@@ -420,7 +420,7 @@ const Services = () => {
                                 </PopLeft>
                                 
                                 <PopRight>
-                                    <Images src={SerImage2} />
+                                    <Images src={SerImage4} />
                                 </PopRight>
                         </Carousel>
                         
